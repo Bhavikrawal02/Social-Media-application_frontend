@@ -2,7 +2,6 @@ import type { Rootstate } from "@/redux/store"
 import { getS3FileUrl } from "@/services/s3"
 import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
-import { toast } from "sonner"
 
 export const useProfile = () => {
     const [profileImageUrl, setProfileImageUrl] = useState(null)

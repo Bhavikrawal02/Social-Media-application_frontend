@@ -1,11 +1,8 @@
 import { useProfilePosts } from "./hooks/useProfilePosts"
 import {
     Dialog,
-    DialogClose,
     DialogContent,
     DialogDescription,
-    DialogHeader,
-    DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
 import { PostCard } from "../PostCard"
