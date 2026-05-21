@@ -10,7 +10,7 @@ type PostCardType = {
     caption?: string
     updated_at?: string
     page?: string
-    post_id:string
+    post_id?:string
 }
 
 export const PostCard = ({ username, post_url_key, caption, updated_at, page = "home",post_id }: PostCardType) => {
@@ -53,7 +53,7 @@ export const PostCard = ({ username, post_url_key, caption, updated_at, page = "
             />}
             <div className="flex flex-col gap-2">
                 <div className="flex gap-3">
-                   <div className="cursor-pointer" onClick={()=>handleLikeClick(post_id)}>
+                   <div className="cursor-pointer" onClick={()=>handleLikeClick(post_id? post_id : "")}>
                      <Heart fill={likedPost ? "red" : "#fff"} />
                     </div>
                     <Comment />

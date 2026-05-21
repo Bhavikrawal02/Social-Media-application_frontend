@@ -1,8 +1,6 @@
 import { api } from "@/lib/api"
 import type { PostFormType } from "@/page/AddPost/constants"
 import axios from "axios"
-import { ThemeProvider } from "next-themes"
-import { toast } from "sonner"
 
 export const getFeed = async ()=>{
     try{

@@ -3,7 +3,7 @@ import { useProfile } from "./hooks/useProfile"
 import { type UserPostsType } from "@/types"
 
 export const Profile = () => {
-    const { userData, page,profileImageUrl } = useProfile()
+    const { userData,profileImageUrl } = useProfile()
     return (
         <div className="add-post-page bg-[#1E1B3A] text-[#FFFFFF] min-h-[90vh] m-1 rounded-xl p-10">
             <div className="add-post flex flex-col  w-[60vw] mx-auto gap-5 border border-[#A78BFA]  rounded-xl p-7 pt-3">

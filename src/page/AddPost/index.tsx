@@ -34,7 +34,8 @@ export const AddPost = () => {
                     username="rawal.bhavik02"
                     post_url_key={(!formik.errors.post_url && formik.values.post_url) ? formik.values.post_url : ""}
                     caption={formik.values.caption} 
-                    page="addpost"/>
+                    page="addpost"
+                    />
             </div>
         </div>
     )
